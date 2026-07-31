@@ -10,12 +10,12 @@ A completed submission for the British Airways Data Science job simulation on Fo
 
 **Approach.**
 - Defined three eligibility tiers (Tier 1 = First / Club World cabin; Tier 2 = Club Europe or Gold status; Tier 3 = Silver or oneworld Sapphire+)
-- Grouped flights along two axes — **haul type** (Short / Long) and **time of day** (Morning / Lunchtime / Afternoon / Evening) — producing 8 flight groupings, each with representative destinations
+- Grouped flights along two axes - **haul type** (Short / Long) and **time of day** (Morning / Lunchtime / Afternoon / Evening), producing 8 flight groupings, each with representative destinations
 - Estimated the Tier 1 / 2 / 3 percentage split for each grouping based on the assumption that cabin allocation and loyalty-tier composition vary by route type and departure time
 - Wrote a four-question justification covering the grouping method, why it makes sense for demand modelling, the assumptions taken, and how the model extends to schedule changes
 
 
-**Key design choice.** Grouping by route type rather than by specific flight or destination means the same table works for any future schedule — new routes get slotted into an existing group by matching their haul length and departure window, so Airport Planning never has to rebuild the model when the schedule changes.
+**Key design choice.** Grouping by route type rather than by specific flight or destination means the same table works for any future schedule. New routes get slotted into an existing group by matching their haul length and departure window, so Airport Planning never has to rebuild the model when the schedule changes.
 
 ---
 
